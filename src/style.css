@@ -1,0 +1,76 @@
+body {
+    max-width: auto;
+    height: initial;
+    color: rgb(194, 194, 194);
+    background-color: #29103a;
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-attachment: fixed;
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+.divisao{
+    width: auto;
+    height: auto;
+    padding: 1.5em;
+    border-style: solid;
+    border-color: #4b4b4b;
+    border-width: 2px;
+    border-radius: 5px;
+    background-color: #a55029;
+}
+.fundoBase{
+    background-color: #186908;
+    border-style: solid;
+    border-color: rgb(61, 60, 60);
+    border-width: 2.5px;
+}
+.botao:hover{
+    background-color: #5b487a;
+}
+
+.letras{
+    color: rgb(194, 194, 194);
+}
+
+.btnLigado{
+    background-color: #186908;
+}
+
+.btnDesligado{
+    background-color: #330452;
+}
+.tabela{
+    border-style: solid;
+    border-color: rgb(194, 194, 194);
+    border-width: 2px;
+    text-align: center;
+}
+.menuLuzes{
+    border-style: solid;
+    border-color: rgb(194, 194, 194);
+    border-width: 2px;
+}
+.menuLuzesHeader{
+    border-style: none;
+    border-width: 2px;
+    border-bottom: solid;
+}
+.menuSensoresHeader{
+    border-style: none;
+    border-color: rgb(194, 194, 194);
+    border-width: 2px;
+    border-bottom: none;
+}
+.online {
+    color: #186908;
+}
+
+.offline {
+    color: #330452;
+}
+td{
+    text-align: justify;
+    padding: 1.5em;
+}
+footer {
+    padding: 0px;
+}

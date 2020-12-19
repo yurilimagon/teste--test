@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="import" href="src/navbar.html">
+    <link rel="stylesheet" href="src/style.css">
+    <title>MyHome</title>   
+</head>
+<body>
+    <div class="container" id="top"></div><br>
+    <div id="main" class="container divisao">
+
+            <div class="collapsible-header fundoBase menuSensoresHeader"><i class="material-icons">settings_remote</i>Sensores</div>
+                <table id="tb-main" class="tabela">
+                    <tbody>
+                        <tr>
+                            <td><b><i class="material-icons">wb_sunny</i> Temp. Externa</b></td>
+                            <td>0 ºC</td>
+                            <td><b><i class="material-icons">opacity</i> Umid. Externa</b></td>
+                            <td>0 %</td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td><b><i class="material-icons">store</i> Temp. Interna</b></td>
+                            <td>0 ºC</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td><b><i class="material-icons">cloud_queue</i> Sensor de Chuva </b></td>
+                            <td>0 %</td>
+                            <td><b></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td><b><i class="material-icons">timeline</i> Pto de Orvalho</b></td>
+                            <td>0 ºC</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+        <ul class="collapsible menuLuzes">
+            <li class="active letras">
+                <div class="collapsible-header fundoBase menuLuzesHeader"><i class="material-icons">lightbulb</i>Luzes</div>
+                <table id="tb-luzes" class="collapsible-body menuLuzesHeader">
+                    <tbody>
+                        <tr>
+                            <td><b><i id="ico-sala" class="material-icons">lightbulb_outline</i> Luz Sala</b></td>
+                            <td>
+                                <a id="sw-sala" class="waves-effect btn botao">Desligado</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td><b><i id="ico-cozi" class="material-icons">lightbulb_outline</i> Luz Cozinha</b></td>
+                            <td>
+                                <a id="sw-cozi" class="waves-effect btn botao">Desligado</a>
+                            </td>
+                        </tr>
+                </table>
+            </li>
+          
+            <li class="letras">
+              <div class="collapsible-header fundoBase menuLuzesHeader"><i class="material-icons">settings_ethernet</i>Status Conexão</div>
+              <table id="tb-status" class="collapsible-body menuLuzesHeader">
+                <tbody>
+                    <tr>
+                        <td>
+                            <b>
+                                <i id="status-interno" class="material-icons">signal_wifi_off</i>
+                                Interno
+                            </b>
+                        </td>
+                        <td>  
+                            <b id="stat-int" class="offline">
+                                Offline
+                            </b>
+                        </td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td>
+                            <b>
+                                <i id="status-externo" class="material-icons">signal_wifi_off</i>
+                                Externo
+                            </b>
+                        </td>
+                        <td>
+                            <b id="stat-ext" class="offline">Offline</b>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            </li>
+          </ul>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+</body>
+</html>
